@@ -27,7 +27,7 @@ import org.testng.xml.XmlSuite;
 public class CustomTestNGReporter implements IReporter {
 	
 	//This is the customize emailabel report template file path.
-	private static final String emailableReportTemplateFile = "C:\\Users\\TVS PRASAD\\workspace\\HashMapPractice\\FreeCRMTestAutomationPOM\\src\\main\\java\\ReportTemplate\\customize-emailable-report-template.html";
+	private static final String emailableReportTemplateFile = "C:/Users/shashank/git/TestAuto/personal/src/main/java/ReportTemplate/customize-emailable-report-template.html";
 		
 	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
 		
