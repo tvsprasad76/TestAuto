@@ -20,7 +20,7 @@ public class TestBase {
  {
 	 try {
 		 prop = new Properties();
-		 FileInputStream ip = new FileInputStream("C:\\Users\\TVS PRASAD\\workspace\\HashMapPractice\\FreeCRMTestAutomationPOM\\src\\main\\java\\com\\crm\\qa\\config\\config.properties");
+		 FileInputStream ip = new FileInputStream("C:/Users/shashank/git/TestAuto/personal/src/main/java/com/crm/qa/config/config.properties");
 		 prop.load(ip);
 	 }
 	 catch(FileNotFoundException e)
@@ -34,11 +34,11 @@ public class TestBase {
 	String browserName =  prop.getProperty("browser");
 	if(browserName.equals("chrome"))
 	{
-		System.setProperty("webdriver.chrome.driver","C:/chromedriver/chromedriver.exe");	
+		System.setProperty("webdriver.chrome.driver","C:/Users/shashank/Desktop/Selenium-Setup/chromedriver_win32/chromedriver.exe");	
 		driver = new ChromeDriver();
 	}
 	else if (browserName.equals("firefox")){
-		System.setProperty("webdriver.gecko.driver","C:/Users/TVS PRASAD/Desktop/Selenium-3.4.0/geckodriver-v0.20.0-win64/geckodriver.exe");	
+		System.setProperty("webdriver.gecko.driver","C:/Users/shashank/Desktop/Selenium-Setup/geckodriver.exe");	
 		driver = new FirefoxDriver();
 	}	else System.out.println("FAILED");
  
